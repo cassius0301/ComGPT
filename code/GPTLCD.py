@@ -342,11 +342,21 @@ def GraphtoStr2(G):
     str: 图结构的文本描述，使用Incident编码法表示。
     """
     Gstr = "G describes a graph among "
-    seed_list = []
-    for key,value in G.items():
-        seed_list.append(key)
-        strnum = str(key)+","
-        Gstr = Gstr + strnum
+    # seed_list = []
+    #
+    # for key,value in G.items():
+    #     seed_list.append(key)
+    #     strnum = str(key)+","
+    #     Gstr = Gstr + strnum
+
+    seed_list = list(G.keys())
+
+    for node in seed_list:
+        if node == seed_list[-1]:
+            Gstr = Gstr + "and " + str(node) + "."
+        else:
+            Gstr = Gstr + str(node) + ", "
+
     Gstr = Gstr + " In this graph:"
     for key,value in G.items():
         stredge = "Node "+str(key)+" is connected to nodes "
