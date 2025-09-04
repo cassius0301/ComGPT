@@ -38,9 +38,10 @@ iteration = 2
 HaveSK = True
 WithoutSK = False
 promptselector = 5 #1-zeroshot 2-fewshot 3-cot 4-bag 5-nsg
+K = 10
 
 for seed in alllist:
-    seed_list = GPTLCD.gpt_communityexpansion(seed,G,ns1,iteration,HaveSK,promptselector)
+    seed_list = GPTLCD.gpt_communityexpansion(seed,G,ns1,iteration,K,HaveSK,promptselector)
 
 
     realcommunity = []
@@ -59,3 +60,4 @@ for seed in alllist:
     sum = sum + c
     length = length + 1
     print("当前结果" + str(seed_list) + " F1:" + str(c) + " Jaccard:" + str(d))
+
