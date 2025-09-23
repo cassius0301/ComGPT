@@ -4,6 +4,24 @@
 
 This guide explains how to reproduce the experimental results of ComGPT on both small and large datasets.
 
+## Project Structure
+
+project/
+├── dataset/                  # Datasets
+│   ├── football/             # Small network (with structure and ground-truth communities)
+│   ├── dolphins/
+│   ├── polbooks/
+│   ├── amazon/               # Large network
+│   └── dblp/
+│
+├── code/                     # Core code
+│   ├── ComGPT on small datasets/       # ComGPT on small datasets (football, dolphins, polbooks)
+│   ├── ComGPT on large datasets/       # ComGPT on large datasets (amazon, dblp)
+│   └── GPTLCD/               # GPTLCD: Function package required by ComGPT
+│
+├── requirements.txt          # Dependency list
+└── README.md                 # Project description
+
 ## Requirements
 
 - Operating System: Windows 10
@@ -12,6 +30,7 @@ This guide explains how to reproduce the experimental results of ComGPT on both 
   - matplotlib (3.7.5)
   - networkx (3.1)
   - numpy (1.24.4)
+  - requests (2.32.3)
 
 ## Usage
 
@@ -36,6 +55,7 @@ bash
 ```
 python ComGPT_for_big_dataset.py
 ```
+
 
 
 
