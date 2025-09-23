@@ -22,6 +22,22 @@ project/
 ├── requirements.txt          # Dependency list
 └── README.md                 # Project description
 
+project/
+├── dataset/ # Datasets
+│ ├── football/ # Small network (with structure and ground-truth communities)
+│ ├── dolphins/
+│ ├── polbooks/
+│ ├── amazon/ # Large network
+│ └── dblp/
+│
+├── code/ # Core code
+│ ├── small_datasets/ # ComGPT on small datasets (football, dolphins, polbooks)
+│ ├── large_datasets/ # ComGPT on large datasets (amazon, dblp)
+│ └── gptlcd/ # GPTLCD: Function package required by ComGPT
+│
+├── requirements.txt # Dependency list
+└── README.md # Project description
+
 ## Requirements
 
 - Operating System: Windows 10
@@ -60,3 +76,4 @@ python ComGPT_for_big_dataset.py
 
 
 If there are any bugs in the code, please contact us in time.
+
