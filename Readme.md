@@ -6,18 +6,17 @@ This guide explains how to reproduce the experimental results of ComGPT on both 
 
 ## Project Structure
 
-project/
-├── dataset/                  # Datasets
-│   ├── football/             # Small network (with structure and ground-truth communities)
-│   ├── dolphins/
-│   ├── polbooks/
-│   ├── amazon/               # Large network
-│   └── dblp/
-│
-├── code/                     # Core code
-│   ├── ComGPT on small datasets/       # ComGPT on small datasets (football, dolphins, polbooks)
-│   ├── ComGPT on large datasets/       # ComGPT on large datasets (amazon, dblp)
-│   └── GPTLCD/               # GPTLCD: Function package required by ComGPT
+# 📁 dataset/
+- **football/** - Small network dataset with structure and ground-truth communities
+- **dolphins/** - Small network dataset
+- **polbooks/** - Small network dataset  
+- **amazon/** - Large network dataset
+- **dblp/** - Large network dataset
+
+# 📁 code/
+- **ComGPT on small datasets/** - Implementation for small datasets (football, dolphins, polbooks)
+- **ComGPT on large datasets/** - Implementation for large datasets (amazon, dblp)
+- **GPTLCD/** - Core function package required by ComGPT
 
 ## Requirements
 
@@ -57,6 +56,7 @@ python ComGPT_for_big_dataset.py
 
 
 If there are any bugs in the code, please contact us in time.
+
 
 
 
