@@ -8,9 +8,7 @@ This guide explains how to reproduce the experimental results of ComGPT on both 
 
 project/
 ├── dataset/                  # Datasets
-
 │   ├── football/             # Small network (with structure and ground-truth communities)
-
 │   ├── dolphins/
 │   ├── polbooks/
 │   ├── amazon/               # Large network
@@ -59,6 +57,7 @@ python ComGPT_for_big_dataset.py
 
 
 If there are any bugs in the code, please contact us in time.
+
 
 
 
