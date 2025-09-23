@@ -8,10 +8,10 @@ This guide explains how to reproduce the experimental results of ComGPT on both 
 
 # 📁 dataset/
 - **football/** - Small network dataset with structure and ground-truth communities
-- **dolphins/** - Small network dataset
-- **polbooks/** - Small network dataset  
-- **amazon/** - Large network dataset
-- **dblp/** - Large network dataset
+- **dolphins/** - Small network dataset with structure and ground-truth communities
+- **polbooks/** - Small network dataset with structure and ground-truth communities  
+- **amazon/** - Large network dataset with structure and ground-truth communities
+- **dblp/** - Large network dataset with structure and ground-truth communities
 
 # 📁 code/
 - **ComGPT on small datasets/** - Implementation for small datasets (football, dolphins, polbooks)
@@ -56,6 +56,7 @@ python ComGPT_for_big_dataset.py
 
 
 If there are any bugs in the code, please contact us in time.
+
 
 
 
