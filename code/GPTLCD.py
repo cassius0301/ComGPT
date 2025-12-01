@@ -647,10 +647,10 @@ def getgpt(data):#
     str: GPT模型生成的回复。
     """
     #配置网络信息
-    os.environ["http_proxy"] =
-    os.environ["https_proxy"] =
+    os.environ["http_proxy"] = /
+    os.environ["https_proxy"] = /
 
-    openai.api_key =  "yours"
+    openai.api_key =  /
 
     # 构建对话
     messages = [
@@ -660,7 +660,7 @@ def getgpt(data):#
 
     # 调用API以进行对话
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-0125",  # 使用 GPT-3.5 Turbo 模型
+        model= / ,  # 选择你调用的模型
         messages=messages,
     )
 
@@ -920,6 +920,7 @@ def eval_scores(pred_comm: Union[List, Set],
     f = 2 * p * r / (p + r + 1e-9)
     j = len(intersect) / (len(pred_comm) + len(true_comm) - len(intersect))
     return round(p, 4), round(r, 4), round(f, 4), round(j, 4)
+
 
 
 
