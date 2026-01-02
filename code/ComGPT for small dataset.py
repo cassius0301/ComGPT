@@ -47,7 +47,7 @@ alllist = [1]
 
 
 for seed in alllist:
-    seed_list = GPTLCD.gpt_communityexpansion(seed,G,ns1,iteration,K,HaveSK,promptselector)
+    seed_list = GPTLCD.gpt_communityexpansion(seed,G,ns2,iteration,K,HaveSK,promptselector)
     for j in range(len(list_true)):
         flag = j
         if seed in list_true[j]:
@@ -55,5 +55,6 @@ for seed in alllist:
     a, b, c, d = GPTLCD.eval_scores(seed_list, list_true[flag])
 
     print("当前结果" + str(seed_list) +" F1:" + str(c)+" Jaccard:"+str(d))
+
 
 
