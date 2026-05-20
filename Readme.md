@@ -56,7 +56,6 @@ python ComGPT_for_big_dataset.py
 
 - Ensure that all required Python packages are installed before running the code.
 - The experimental results may vary depending on the LLM API settings and runtime environment.
-- Some comparison algorithms may require additional configuration according to their respective instructions.
 
 
 
